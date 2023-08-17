@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+.header {
+    /* display: flex; */
+    /* position: absolute; */
+    /* width: 100%; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+/*NAV*/
+.nav {
+    position: absolute;
+    background-color: rgb(43, 61, 79, .5);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid #b1c1d2;
+    border-radius: 10px;
+    color: #b1c1d2;
+    background-color: #2b3d4f;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.nav a:hover {
+    border: 2px solid #3398db;
+    border-radius: 10px;
+    color: #3398db;
+    background-color: #2b3d4f;
+}
+
+/*SECCION PRESENTACION*/
+.seccion_inicio {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 0 5em;
+    background-color: #1b2a37;
+    background: linear-gradient(to bottom, #3398db -20%, #284055 70%, #000000 100%);
+}
+
+.seccion_inicio img {
+    margin-top: 50px;
+    width: 20em;
+    border-radius: 50%;
+}
+
+.seccion_inicio h1 {
+    position: relative;
+    font-size: 50px;
+    font-weight: 1000;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    color: #3398db;
+}
+
+.seccion_inicio p {
+    font-size: 30px;
+    font-weight: bold;
+    color: #b1c1d2;
+    text-align: center;
+}
+
+/*SECCION SOBRE MI*/
+.seccion_about {
+    min-height: 100vh;
+    background: url(./assets/img/fondo.png);
+    background-color: rgba(27, 42, 55, 1);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.seccion_about h2 {
+    /* padding: 100px 50px 50px 50px; */
+    padding: 1.5em;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #e74d3c;
+}
+
+.container_about_skills {
+    display: inline-block;
+    line-height: 30px;
+    /* padding: 0 80px 0 80px; */
+    padding: 0 3em;
+    height: 100%;
+    text-align: justify;
+    color: #fff;
+}
+
+.container_about_skills h3 {
+    text-align: center;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 5%;
+    margin-bottom: 15px;
+}
+
+.container_about_skills b {
+    color: #e74d3c;
+}
+
+.container__img {
+    text-align: center;
+    width: 100%;
+    margin-top: 3em;
+}
+
+.container__img img {
+    margin: 40px 10px 10px 10px;
+    border-radius: 10% 40% 10% 40%;
+    background: linear-gradient(270deg, rgb(255, 0, 0, .5), rgb(0, 0, 255, .5), rgb(255, 20, 147, .5));
+    box-shadow: 0 0 30px ;
+    background-size: 300%;
+	animation: glowing 20s linear infinite;
+    width: 100px;
+}
+
+@keyframes glowing{
+	0%{
+		background-position: 0 0;
+	}
+	50%{
+		background-position: 400% 0;
+	}
+	100%{
+		background-position: 0 0;
+	}
+}
+
+/*SECCION PORTAFOLIO*/
+.seccion_portafolio {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000000 -20%, #284055 70%, #3398db 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion_portafolio h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 1.5em;
+    color: #e74d3c;
+}
+
+.seccion_portafolio img {
+    position: relative;
+    width: 70%;
+    max-width: 40em;
+    padding-bottom: 5em;
+}
+
+.seccion_contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    background-color: #284055;
+    text-align: center;
+    padding: 2em;
+}
+
+.seccion_contacto h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 1.5em;
+    color: #e74d3c;
+}
+
+.seccion_contacto li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.seccion_contacto i {
+    font-size: 5em;
+    color: #3398db;
+    padding: 0 1em 0 1em;
+    transition: 0.2s;
+    padding-bottom: 50px;
+}
+
+.seccion_contacto i:hover {
+    text-shadow: 0px 0px 30px #b1c1d2;
+}
